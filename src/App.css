@@ -1,38 +1,192 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .form {
+    margin-bottom: 30px;
   }
-}
+  
+  .form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .form input,
+  .form select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    width: calc(100% - 22px); /* Adjust to fit padding */
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+  
+  button:first-of-type {
+    background-color: #28a745; /* Verde */
+  }
+  
+  button:nth-of-type(2) {
+    background-color: #007bff;
+  }
+  
+  
+  .report {
+    text-align: center; /* Centralizar conteúdo */
+    margin-top: 20px;
+  }
+  
+  .report h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .report-section {
+    margin-bottom: 20px;
+  }
+  
+  .report-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .report ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .report li {
+    margin: 5px 0;
+  }
+  
+  .totals {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .totals h4 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .totals p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .form label {
+      font-size: 1rem;
+    }
+  
+    .form input,
+    .form select {
+      font-size: 0.9rem;
+      width: calc(100% - 20px);
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .report h2 {
+      font-size: 1.3rem;
+    }
+  
+    .report ul {
+      font-size: 1rem;
+    }
+  
+    .totals h3 {
+      font-size: 1.1rem;
+    }
+  
+    .totals p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form label {
+      font-size: 0.9rem;
+    }
+  
+    .form input,
+    .form select {
+      font-size: 0.8rem;
+      width: 100%;
+    }
+  
+    button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  
+    .report h2{
+        font-size: 1.2rem;
+      }
+    
+      .report-section h3 {
+        font-size: 1.2rem;
+      }
+    
+      .report ul {
+        font-size: 0.9rem;
+      }
+    
+      .totals h4 {
+        font-size: 1rem;
+      }
+    
+      .totals p {
+        font-size: 0.9rem;
+      }
+    }
+  
